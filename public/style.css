@@ -1,0 +1,92 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Style */
+body {
+  background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: black;  
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 10px rgba(69, 68, 68, 0.3);
+}
+
+header p {
+  font-size: 1.1rem;
+  color: rgb(54, 53, 53);
+  margin-bottom: 25px;
+}
+
+/* Upload Form */
+form {
+  background: rgba(255, 255, 255, 0.263);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
+}
+
+/* File Input */
+input[type="file"] {
+  background: #fff;
+  color: gray;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+/* Upload Button */
+button {
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #2575fc;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Uploaded Image Preview (after upload) */
+img {
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #080808;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Image Uploader | Node.js + Multer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href=".//node-js.jpg">
+</head>
+
+<body>
+    <header>
+        <h1>Smart Image Uploader</h1>
+        <p>Powered by Node.js & Multer</p>
+    </header>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 | Built with Node.js & Multer</p>
+    </footer>
+
+</body>
+
+</html>
