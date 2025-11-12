@@ -2,9 +2,16 @@ var e = require('express');
 var m = require('multer');
 var fs = require('fs');
 var path = require('path');
+var cors = require('cors');
 
 var app = e();
-var port = 3000;
+
+//Render’s dynamic PORT
+var port = process.env.PORT || 3000;
+
+app.use(cors({
+    origin: 'https://nodejs-image-uploader.netlify.app/' 
+}));
 
 // Multer Storage Setup 
 var storage = m.diskStorage({
@@ -28,7 +35,7 @@ app.get('/', (req, res) => {
             res.status(500).send('Error loading index.html');
         } else {
             res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.send(data);
+            res.end(data);
         }
 
     });
